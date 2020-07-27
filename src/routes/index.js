@@ -12,9 +12,9 @@ export default function Routes() {
   return (
     <Switch>
       <Route path="/" exact component={SignIn} />
-      <Route path="/churras" component={Dashboard}  />
-      <Route path="/new-churras" component={NewChurras} />
-      <Route path="/list-churras" component={ListChurras} />
+      <Route path="/churras" component={Dashboard} isPrivate  />
+      <Route path="/new-churras" component={NewChurras}isPrivate />
+      <Route path="/list-churras" component={ListChurras} isPrivate/>
     </Switch>
   );
 }
