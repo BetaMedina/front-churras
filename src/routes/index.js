@@ -14,7 +14,7 @@ export default function Routes() {
       <Route path="/" exact component={SignIn} />
       <Route path="/churras" component={Dashboard} isPrivate  />
       <Route path="/new-churras" component={NewChurras}isPrivate />
-      <Route path="/list-churras" component={ListChurras} isPrivate/>
+      <Route path="/list-churras/:id" component={ListChurras} isPrivate/>
     </Switch>
   );
 }

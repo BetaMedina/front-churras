@@ -40,7 +40,7 @@ export const Card = styled.div`
   div{
     display:flex;
     justify-content:space-between;
-    height:22%;
+    height:15%;
 
   h1{
     color: rgba(0, 0, 0, 0.8);
@@ -60,9 +60,8 @@ export const Card = styled.div`
 
 export const List = styled.ul`
   list-style:none;
-  margin-top:5%;
   padding:5%;
-  
+  margin-top:4%;
 
   li{
     display:flex;
