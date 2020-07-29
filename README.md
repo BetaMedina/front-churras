@@ -1,6 +1,6 @@
-
-
-![](https://cdn.pixabay.com/photo/2013/07/13/11/34/owl-158416_960_720.png)
+<p align="center"> 
+ <img  src="https://cdn.pixabay.com/photo/2013/07/13/11/34/owl-158416_960_720.png">
+</p> 
 # Criação e agendamento de Churrascos
 
 ### Funções:
