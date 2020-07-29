@@ -30,6 +30,8 @@ const Churras = () => {
           <Card key={res.id} onClick={()=>history.push(`/list-churras/${res.id}`)}>
             <h1>{formatData(res.date)}</h1>
             <p>{res.name}</p>
+            <p style={{marginTop:"20px",fontSize:"13px"}}> - {res.obs}</p>
+            <p style={{marginTop:"20px",fontSize:"13px"}}> - Bebida Inclusa? {res.with_drink ? "Sim" : "Não"}</p>
             <CardFooter>
               <div>
                 <p><img src={People} />{res.number_people}</p>
