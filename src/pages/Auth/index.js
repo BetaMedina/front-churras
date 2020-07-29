@@ -37,7 +37,9 @@ const Auth = () => {
         icon: "success",
       }).then(res=>{
         localStorage.setItem("@churras-auth",httpResponse.data.access_token)
-        history.push('/churras')
+        if(res){
+          history.push('/churras')
+        }
       })
     }catch(err){
       swal("Opss!", "Parece que suas credenciais não bateram, tente novamente ... ", "error");

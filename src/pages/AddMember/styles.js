@@ -38,56 +38,26 @@ export const Form = styled.form `
   flex-direction:column;
   padding-top:4%;
   
-  div{
-    display: flex;
-    flex-direction:column;
-    padding:2vh;
+ 
 
 
-    label{
-      margin-bottom:10px;
-    }
+  label{
+    margin-bottom:10px;
+  }
     
 
-    button{
-      width: 282px;
-      height: 50px;
-      background: #000000;
-      border-radius: 18px;
-      border:none;
-      color:#ffff
-    }
+  button{
+    width: 282px;
+    height: 50px;
+    background: #000000;
+    border-radius: 18px;
+    border:none;
+    color:#ffff
   }
 `
 
-export const Input  = styled.input`
-  width: 282px;
-  height: 50px;
-  background: #f2f0f0;
-  border-radius: 2px;
-  border:none;
-  text-indent: 20px;
-`
-export const TextArea  = styled.textarea`
-  height: 200px;
-  background: #f2f0f0;
-  border-radius: 2px;
-  border:none;
-  font-family:'Raleway', sans-serif;
-  padding: 10px;
-  `
-
-export const InputMaskCustom  = styled(InputMask)`
-  width: 282px;
-  height: 50px;
-  background: #f2f0f0;
-  border-radius: 2px;
-  border:none;
-  text-indent: 15px;
-`
-
 export const CurrencyInputCustom  = styled(CurrencyInput)`
-  width: 282px;
+  width: 100%;
   height: 50px;
   background: #f2f0f0;
   border-radius: 2px;
@@ -95,8 +65,14 @@ export const CurrencyInputCustom  = styled(CurrencyInput)`
   text-indent: 20px;
 `
 
-export const ToggleArea = styled.div`
+export const CurrencyArea = styled.div`
 display: flex;
-flex-direction: row;
+flex-direction: column;
+justify-content:center;
+align-items:center;
+margin-top:10%;
 
+button{
+  margin:10%;
+}
 `;

@@ -84,10 +84,7 @@ export const PowerCircle = styled.div`
 
     justify-content:center;
     align-items:center;
-    img{
-      width:50%;
-      height:50%;
-    }
+    
   }
   h1{
     padding:5%;

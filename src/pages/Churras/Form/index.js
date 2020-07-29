@@ -13,7 +13,8 @@ const Churras = () => {
     obs:'',
     withDrink:false,
     description:'',
-    suggestedValue:''
+    suggestedValue:'',
+    numberPeople:1
   })
 
   const handleSubmit = async (e) =>{
@@ -61,6 +62,16 @@ const Churras = () => {
               type="string"
               onChange={handleChange}
               placeholder="nome do churras"/>
+          </div>
+          <div >
+            <label htmlFor="">Quantidade de pessoas</label>
+            <Input 
+              name="numberPeople" 
+              required 
+              value={formData.numberPeople}
+              type="number"
+              onChange={handleChange}
+              placeholder="ex: 1"/>
           </div>
         
         <div>

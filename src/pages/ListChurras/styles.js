@@ -3,6 +3,8 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display:flex;
   justify-content:center;
+  flex-direction:column;
+  align-items:center;
 `;
 
 
@@ -14,14 +16,57 @@ export const CardContainer = styled.div`
   padding-left:20%;
 `;
 
+export const DivDeleteButtonContainer = styled.div `
+  display:flex;
+  justify-content:flex-end;
+  width: 56%;
+  
+  button{
+    z-index:3;
+    position:relative;
+    background : #FFFFFF;
+    top:11em;
+    width: 282px;
+    height: 50px;
+    background: #ff6347;
+    border-radius: 18px;
+    border:none;
+    color:#ffff;
+  }
+` 
+
+export const DivInsertMemberButtonContainer = styled.div `
+  display:flex;
+  justify-content:space-between;
+  width: 50%;
+  
+  
+` 
+
+
+export const Button = styled.button`
+    z-index:3;
+    position:relative;
+    background : #FFFFFF;
+    top:11em;
+    margin:0;
+    width: 30%;
+    height: 50px;
+    background: ${props => props.bgColor ? props.bgColor: "#aef359"} ;
+    border-radius: 18px;
+    border:none;
+    color:#ffff;
+
+`
+
 export const Card = styled.div`
   cursor:pointer;
   display:flex;
+  padding:3%;
   margin-top:2%;
-  margin-right:4%;
   position:relative;
   background : #FFFFFF;
-  top:14em;
+  top:11em;
   z-index:2;
   width: 60%;
   height: auto;
@@ -29,11 +74,13 @@ export const Card = styled.div`
 
   display:flex;
   flex-direction:column;
+  margin-bottom:20px;
   
   h1{
-    padding:5%;
     color:#000;
     font-size: 28px;
+    margin-top:3%;
+
   }
 
   
@@ -47,10 +94,10 @@ export const Card = styled.div`
   }
   
   p{
-    padding:8%;
     font-size: 16px;
     color: rgba(0, 0, 0, 0.8);
-  
+    margin-top:3%;
+
   }
 
   }
@@ -60,8 +107,7 @@ export const Card = styled.div`
 
 export const List = styled.ul`
   list-style:none;
-  padding:5%;
-  margin-top:4%;
+  margin-top:3%;
 
   li{
     display:flex;
@@ -69,10 +115,10 @@ export const List = styled.ul`
     border-bottom:  1px solid #E5C231;
     margin: 1% 0 1% 0;
 
-  p{
-    padding-bottom:4px;
-    color: rgba(0, 0, 0, 0.8);
-  }
+    p{
+      padding-bottom:4px;
+      color: rgba(0, 0, 0, 0.8);
+    }
 
   }
 
