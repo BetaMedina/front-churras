@@ -18,6 +18,11 @@
 - Painel Admin
 - Listagem de informações complementares ja cadastradas
 
+### Proximas Features
+
+- Maior componentização (Card,Inputs e etc..)
+- Toasts de notificação personalizados
+
 ### Como utilizar esse projeto:
 
 - Run `yarn`
